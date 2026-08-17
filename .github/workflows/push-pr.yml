@@ -13,4 +13,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.1.0
+      - name: Run tests
+        run: npm run test
