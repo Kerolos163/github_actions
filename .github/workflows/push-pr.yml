@@ -17,4 +17,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6.1.0
       - name: Run tests
+        working-directory: ./src
         run: npm run test
